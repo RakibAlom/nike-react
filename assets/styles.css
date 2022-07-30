@@ -1,8 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700&display=swap');
 
+:root{
+  --primary-color: #FA804C;
+  --second-color: #363958;
+  --linear-color: linear-gradient(45deg, #3D4FF3,#3543BC);
+  --linear-color-hover: linear-gradient(45deg, #3543BC, #3D4FF3);
+}
+
 body{
   /* font-family: 'Bebas Neue', cursive; */
   font-family: 'Roboto', sans-serif;
+}
+h1,h2{
+  font-family: 'Bebas Neue', cursive;
+}
+.primary-color{
+  color: var(--primary-color);
+}
+.second-color{
+  color: var(--second-color);
+}
+.primary-bg-color{
+  background: var(--linear-color) !important;
+  border-color: var(--linear-color) !important;
+}
+.card,
+.about-single-content{
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+.card-img-top{
+  min-height: 260px;
+  padding: 1rem 2rem;
+}
+.single-content-icon img{
+  width: 78px;
 }
 
 /* HEADER AREA START */
@@ -10,9 +41,23 @@ body{
   background-color: #FFF9F4;
 }
 .navbar-brand img{
-  width: 250px;
+  width: 15rem;
 }
 .nav-item .nav-link{
   color: #3C3C3C;
 }
 /* HEADER AREA END */
+
+/* FOOTER AREA START */
+.footer{ 
+  background-color: #FFF9F4;
+}
+.developer a{
+  text-decoration: none;
+  color: var(--second-color);
+  transition: 0.2s;
+}
+.developer a:hover{
+  color: var(--primary-color);
+}
+/* FOOTER AREA END */
